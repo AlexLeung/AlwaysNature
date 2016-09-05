@@ -63,7 +63,7 @@ class API {
     }
 
     public function admin_signIn($response, $cart, $mysqli) {
-        /*if(!isset($_POST['pass1']) || !isset($_POST['pass2']) || !isset($_POST['grecaptcha'])) {
+        if(!isset($_POST['pass1']) || !isset($_POST['pass2']) || !isset($_POST['grecaptcha'])) {
             throw new Exception("missing inputs");
         }
         if(strcmp($_POST['pass1'], ADMIN_PASS1) !== 0 || strcmp($_POST['pass2'], ADMIN_PASS2) !== 0) {
@@ -83,7 +83,7 @@ class API {
         ), true);
         if(!$recaptchaCheck['success']) {
             throw new Exception("Invalid Recaptcha");
-        }*/
+        }
         $_SESSION['admin_expire'] = time() + (60*30); // Expires in 30 minutes
     }
 
