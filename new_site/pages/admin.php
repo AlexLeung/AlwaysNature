@@ -81,7 +81,6 @@
         });
         // Adding a new item
         $newItemButton.click(function() {
-            alert('clicked');
             makeAdminAPICall({
                 endpoint: "addItem",
                 success: function() {
@@ -461,6 +460,6 @@
                 },
                 error: function() { alert("Trouble hitting '/admin/"+params.endpoint+"'. Try refreshing page"); }
             })
-        }                     
+        }
     });
 </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
