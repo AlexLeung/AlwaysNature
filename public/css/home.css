@@ -1,0 +1,71 @@
+#home {
+    background-image: url('/img/caroline_sada_landscape.jpg');
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#home > .page > .title {
+    position: absolute;
+    left: 50vw;
+    top: 25vw;
+    margin-top: -100px;
+    margin-left: -150px;
+    height: 200px;
+    width: 300px;
+}
+#home > .page > .title.little {
+    display: none;
+    top: 35vw;
+}
+#home > .page > .title > svg {
+    fill: black;
+    display: block;
+    margin: 0 auto;
+}
+#home > .page > .title > svg .underline {
+    fill: none;
+}
+#home > .page > #filler {
+    min-height: 200px;
+    height: 57vw;
+    max-height: 100vh;
+}
+#home > .page > #remainder-of-page {
+    background: white;
+    width: 100%;
+    padding: 20px;
+    height: 700px;
+    position: relative;
+    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+#home > .page > #remainder-of-page > #about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -25px;
+    margin-left: -160px;
+    text-align: center;
+}
+#home > .page > #remainder-of-page > #about > h1 {
+    display: inline-block;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+@media(max-width:650px) {
+    #home > .page > .title.little {
+        display: block;
+    }
+    #home > .page > .title.big {
+        display: none;
+    }
+}
+@media(max-width:465px) {
+    #home > .page > .title.little {
+        display: none;
+    }
+    #home > .page > #remainder-of-page > #about > h1 {
+        font-size: 25px;
+    }
+}

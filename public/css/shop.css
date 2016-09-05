@@ -1,0 +1,297 @@
+#shop > .page > .container {
+    margin: 0 auto;
+    max-width: 870px;
+}
+#shop > .page > .container > p {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+@media(max-width:920px) {
+    #shop > .page > .container > p {
+        margin-top: 20px;
+        padding: 0 15px;
+    }   
+}
+#shop > .page > .container > #product-listing {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#shop > .page > .container > #product-listing > .item {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-size: 250px 250px;
+    margin: 20px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#shop > .page > .container > #product-listing > .item > .added-to-cart,
+#shop > .page > #modal-backdrop > #modal > #gallery > .image-container > .added-to-cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    background: rgba(0,0,0,.5);
+    color: white;
+    font-size: 9px;
+    display: none;
+}
+#shop > .page > .container > #product-listing > .item.added > .added-to-cart,
+#shop > .page > #modal-backdrop > #modal.added > #gallery > .image-container > .added-to-cart {
+    display: block;
+}
+#shop > .page > .container > #product-listing > .item > .footer {
+    position: absolute;
+    bottom: 15px;
+    width: 220px;
+    left: 15px;
+    background: white;
+    text-align: left;
+    opacity: .7;
+}
+@media(max-width:650px) {
+    #shop > .page > .container > #product-listing > .item > .footer {
+        opacity: 1;
+    }
+}
+#shop > .page > .container > #product-listing > .item > .footer:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#shop > .page > .container > #product-listing > .item > .footer > span {
+    padding: 5px 10px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+    height: 30px;
+    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+#shop > .page > .container > #product-listing > .item > .footer > .quick-view {
+    background: black;
+    color: white;
+    text-align: center;
+    width: 110px;
+}
+#shop > .page > .container > #product-listing > .item > .footer > .prices {
+    width: 110px;
+    padding: 5px 0;
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: bolder;
+    text-align: center; 
+}
+#shop > .page > .container > #product-listing > .item > .footer > .prices > .price {
+    margin: 0 3px;
+}
+#shop > .page > #modal-backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0,0,0,.5);
+    z-index: 100;
+    line-height: 100vh;
+    text-align: center;
+}
+#shop > .page > #modal-backdrop:hover {
+    cursor: pointer;
+}
+#shop.modal-active > .page > #modal-backdrop {
+    display: block;
+}
+#shop > .page > #modal-backdrop > #modal {
+    background: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    line-height: normal;
+}
+#shop > .page > #modal-backdrop > #modal:hover {
+    cursor: default;
+}
+#shop > .page > #modal-backdrop > #modal > #gallery {
+    float: left;
+    padding-right: 20px;
+}
+#shop > .page > #modal-backdrop > #modal > #gallery > .image-container {
+    background-image: url('/img/prods/1/cover.jpg');
+    background-size: 330px 330px;
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 330px;
+    margin: 0 auto;
+    position: relative;
+}
+#shop > .page > #modal-backdrop > #modal > #gallery > .gallery-nav {
+    text-align: center;
+    margin-top: 5px;
+}
+#shop > .page > #modal-backdrop > #modal > #gallery > .gallery-nav > span {
+    background: white;
+    border: 1px solid black;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0 8px;
+}
+#shop > .page > #modal-backdrop > #modal > #gallery > .gallery-nav > span:hover {
+    cursor: pointer;
+}
+#shop > .page > #modal-backdrop > #modal > #gallery > .gallery-nav > span.active {
+    background: black;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view {
+    float: right;
+    width: 300px;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .prod-title {
+    font-size: 38px;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .prod-subtitle {
+    font-size: 25px;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > h1,
+#shop > .page > #modal-backdrop > #modal > #detail-view > h2 {
+    margin: 0;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .prod-desc {
+    margin: 10px 0;
+    height: 160px;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 11px;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .size-selection {
+    margin-bottom: 15px;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .size-selection > span {
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid black;
+    opacity: .3;
+    padding: 3px 20px;
+    margin: 0 5px;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .size-selection > span.enabled {
+    display: inline-block;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .size-selection > span:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .size-selection > span.active {
+    opacity: 1;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .submit-button {
+    font-size: 19px;
+    margin-top: 10px;
+    padding: 8px 75px;
+    color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .submit-button:hover {
+    cursor: pointer;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .submit-button > .cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.9);
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .submit-button.in-progress:hover {
+    cursor: default;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .submit-button.in-progress > .cover {
+    display: block;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .add-to-cart {
+    background: black;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view > .remove-from-cart {
+    display: none;
+    background:rgb(208,1,27);
+    padding: 8px 5px;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view.added > .remove-from-cart {
+    display: block;
+}
+#shop > .page > #modal-backdrop > #modal > #detail-view.added > .add-to-cart {
+    display: none;
+}
+#shop > .page > #modal-backdrop > #modal > #close-modal {
+    font-size: 19px;
+    display: none;
+    margin: 15px auto;
+    background: rgb(160,160,160);
+    color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    width: 150px;
+    padding: 8px 50px;
+}
+#shop > .page > #modal-backdrop > #modal > #close-modal:hover {
+    cursor: pointer;
+}
+@media(max-width:750px) {
+    #shop > .page > #modal-backdrop > #modal > #close-modal {
+        display: block;
+    }
+    #shop > #navbar {
+        z-index: 500;
+    }
+    #shop.modal-active > .page > .container {
+        display: none;
+    }
+    #shop > .page > #modal-backdrop {
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        right: 0;
+        background: white;
+        top: 55px;
+        height: 0;
+    }
+    #shop > .page > #modal-backdrop > #modal {
+        width: auto;
+        display: block;
+        overflow: hidden;
+    }
+}
+@media(max-width:710px) {
+    #shop > .page > #modal-backdrop > #modal > #gallery {
+        float: none;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    #shop > .page > #modal-backdrop > #modal > #detail-view {
+        float: none;
+        margin: 40px auto 10px auto;
+    }
+}
+@media(max-width:420px) {
+    #shop > .page > #modal-backdrop > #modal > #gallery > .image-container {
+        width: 250px;
+        height: 250px;
+        background-size: 250px 250px;
+    }
+    #shop > .page > #modal-backdrop > #modal > #detail-view {
+        width: 250px;
+    }
+    #shop > .page > #modal-backdrop > #modal > #detail-view > .prod-title {
+        font-size: 30px;
+    }
+    #shop > .page > #modal-backdrop > #modal > #detail-view > .prod-subtitle {
+        font-size: 20px;
+    }
+    #shop > .page > #modal-backdrop > #modal > #detail-view > .size-selection > span {
+        padding: 3px 10px;
+    }
+}

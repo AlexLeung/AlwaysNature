@@ -1,0 +1,211 @@
+#admin > .page > #admin-login {
+    display: none;
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: calc(100vh - 55px);
+    text-align: center;
+}
+#admin > .page > #admin-login.active {
+    display: block;
+}
+#admin > .page > #admin-login > form {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    background: rgb(180,180,180);
+    line-height: normal;
+}
+#admin > .page > #admin-login > form > input {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid rgb(220,220,220);
+    font-size: 22px;
+    margin: 5px auto;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+#admin > .page > #admin-login > form > input[type=submit] {
+    background: rgb(50,50,50);
+    border: none;
+    color: white;
+    padding: 10px 50px;
+}
+#admin > .page > #admin-login > form > input[type=submit]:hover {
+    cursor: pointer;
+    background: rgb(25,25,25);
+}
+#admin > .page > #admin-login > form > input[type=submit]:active {
+    background: black;
+}
+#admin > .page > #admin-container {
+    display: none;
+}
+#admin > .page > #admin-container.active {
+    display: block;
+}
+#admin > .page > #admin-container > h1,
+#admin > .page > #admin-container > h2 {
+    margin: 0;
+}
+#admin > .page > #admin-container > h1 {
+    margin-top: 40px;
+}
+#admin > .page > #admin-container > #sign-out-container {
+    margin-bottom: 40px;
+}
+#admin > .page > #admin-container > * {
+    text-align: center;
+}
+#admin > .page > #admin-container > .maintenance-change-container {
+    margin-bottom: 40px;
+}
+#admin > .page > #admin-container > .maintenance-change-container > * {
+    vertical-align: middle;
+}
+#admin > .page > #admin-container > .maintenance-change-container > .vertical-bar {
+    display: inline-block;
+    width: 1px;
+    height: 25px;
+    background: black;
+}
+#admin > .page > #admin-container > #new-item-button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+#admin > .page > #admin-container > #item-container > .item {
+    border: 1px solid black;
+    width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    position: relative;
+}
+#admin > .page > #admin-container > #item-container > .item > .activate-deactivate-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#admin > .page > #admin-container > #item-container > .item > .activate-deactivate-container > input {
+    margin-left: 10px;
+}
+#admin > .page > #admin-container > #item-container > .item > .name-container {
+    border-bottom: 1px solid black;
+}
+#admin > .page > #admin-container > #item-container > .item > .name-container.editing > .not-editing,
+#admin > .page > #admin-container > #item-container > .item > .name-container > .editing {
+    display: none;
+}
+#admin > .page > #admin-container > #item-container > .item > .name-container.editing > .editing,
+#admin > .page > #admin-container > #item-container > .item > .name-container > .not-editing {
+    display: inline-block
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .size-button-container {
+    background: rgb(80,80,80);
+    padding-top: 10px;
+    overflow: visible;
+    position: relative;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .size-button-container > div {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    display: block;
+    background: white;
+    height: 5px;
+    z-index: 1;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .size-button-container > span {
+    padding: 10px;
+    background: rgb(200,200,200);
+    display: inline-block;
+    margin-left: 15px;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .size-button-container > span:hover {
+    cursor: pointer;
+    background: rgb(230,230,230);
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .size-button-container > span.active {
+    background: white;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container {
+    background: white;
+    padding: 10px;
+    position: relative;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > input.remove-size-button {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > div {
+    border-top: 1px dotted black;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > div:first-of-type {
+    border-top: none;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .subtitle-container.editing > .not-editing,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .subtitle-container > .editing {
+    display: none;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .subtitle-container.editing > .editing,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .subtitle-container > .not-editing {
+    display: inline-block
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .description-container > textarea {
+    display: block;
+    width: 450px;
+    height: 120px;
+    resize: none;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .description-container > p {
+    font-style: italic;
+    margin: 5px 0;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .description-container.editing > .not-editing,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .description-container > .editing {
+    display: none;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .description-container.editing > .editing,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .description-container > .not-editing {
+    display: inline-block
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .current-price-container.editing > .not-editing,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .current-price-container > .editing {
+    display: none;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .current-price-container.editing > .editing,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .current-price-container > .not-editing {
+    display: inline-block
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing {
+    border: 1px solid black;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .prices-holder > .row > span:first-of-type,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .row > span:first-of-type {
+    width: 250px;
+    border-right: 1px solid black;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .prices-holder > .row > span,
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .row > span {
+    display: inline-block;
+    padding: 5px;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .row > span {
+    font-weight: bold;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .prices-holder > .row {
+    border-top: 1px solid black;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .prices-holder > .row:first-of-type {
+    border-top: none;
+}
+#admin > .page > #admin-container > #item-container > .item > .sizes-container > .detail-container > .pricing-container > .prices-listing > .prices-holder {
+    max-height: 150px;
+    overflow-y: scroll;
+    border-top: 1px solid black;
+}

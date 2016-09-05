@@ -1,0 +1,139 @@
+/* Contents:
+ * 1. Global
+ * 2. Page Types
+ * 3. Errors
+ * 4. Navbar
+ */
+/* Global */
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    min-width: 305px;
+}
+p {
+    margin: 0;
+}
+/* Page Types */
+.middle-of-page {
+    width: 100%;
+    margin-top: -55px;
+    height: 100%;
+    line-height: 100vh;
+    text-align: center;
+}
+.middle-of-page > .middle-container {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/* Errors */
+.middle-of-page > .middle-container > p {
+    text-align: center;
+}
+.middle-of-page > .middle-container > .tiny-title {
+    margin-bottom: 5px;
+}
+.middle-of-page > .middle-container > .divider {
+    width: 370px;
+    margin: 0 auto;
+    height: 2px;
+    background: black;
+}
+.middle-of-page > .middle-container > .big-red {
+    color: rgb(208,1,27);
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.middle-of-page > .middle-container > .big-subtitle {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+/* Navbar */
+#navbar {
+    z-index: 2;
+    padding: 5px 25px;
+    background: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+#navbar.not-scrolled-past {
+    background: none;
+}
+#navbar > div {
+    height: 45px;
+    line-height: 45px;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+#navbar.not-scrolled-past a {
+    color: black;
+}
+#navbar a > svg {
+    fill: white;
+}
+#navbar.not-scrolled-past a > svg {
+    fill: black;
+}
+#navbar a > svg .underline {
+    fill: none;
+}
+#navbar a.active > svg .underline,
+#navbar a:hover > svg .underline {
+    fill: white;
+}
+#navbar.not-scrolled-past a.active > svg .underline,
+#navbar.not-scrolled-past a:hover > svg .underline {
+    fill: black;
+}
+#navbar a.active,
+#navbar a:hover {
+    text-decoration: underline;
+}
+#navbar > .logo-link {
+    display: block;
+    float: left;
+}
+#navbar > .other-links {
+    display: block;
+    float: right;
+}
+#navbar > .other-links > a {
+    margin-left: 25px;
+}
+#navbar + .page {
+    padding-top: 55px;
+    height: 100%;
+    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+@media(max-width:768px) {
+    #navbar {
+        padding: 5px;
+    }
+}
+@media(max-width:390px) {
+    #navbar > .other-links > a {
+        margin-left: 11px;
+    }
+}
+@media(max-width:340px) {
+    #navbar > .other-links > a {
+        margin-left: 5px;
+    }
+}
